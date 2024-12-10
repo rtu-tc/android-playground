@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Android playground</title>
+    <title>Test</title>
+    <script>
+        function example2() {
+            Android.example2("123456");
+        }
+
+        function example3() {
+            const bool = Android.example3();
+            alert(bool);
+        }
+
+        function example1() {
+            Android.example1();
+        }
+    </script>
 </head>
 <body>
-    <button id="example1">example-1</button>
-    <script>
-        const btnExample1 = document.getElementById("example1");
-        btnExample1.addEventListener("click", () => {
-            console.log("Example 1 clicked!");
-        });
-    </script>
+    <h1>WebView Interface Test</h1>
+    <button onclick="example1()">example1</button>
+    <button onclick="example2()">example2</button>
+    <button onclick="example3()">example3</button>
 </body>
 </html>
